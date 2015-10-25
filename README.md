@@ -13,7 +13,7 @@ will return a promise that resolves to a SpotifyRemote. See [API](#API).
 
 # API
 
-> SpotifyRemote is the __undocumented__ official spotify API.
+> SpotifyRemote is the __undocumented__ official spotify playbutton API.
 
 ## init(token, unknown, unkown, options)
 

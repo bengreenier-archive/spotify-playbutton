@@ -8,7 +8,7 @@ Expose the SDK behind the spotify play button widget to node
 Some scary shit. We EVAL the official spotify client with enough
 shims to make it run. 
 
-`npm install spotify-playbutton`. `require('spotify-playbutton')`
+`npm install spotify-playbutton`. `require('spotify-playbutton')({SSL:true})`
 will return a promise that resolves to a SpotifyRemote. See [API](#API).
 
 # API

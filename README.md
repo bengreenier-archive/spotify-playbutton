@@ -20,6 +20,14 @@ will return a promise that resolves to a SpotifyRemote. See [API](#API).
 We call this for you before we yield the promise.
 It sets things up and connects to the local spotify client.
 
+## playSpotifyURI(uri)
+
+plays a thing in the client
+
+## openSpotifyURI(uri)
+
+opens a thing in the client
+
 ## playPauseCurrent
 
 toggles play/pause

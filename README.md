@@ -15,7 +15,7 @@ will return a promise that resolves to a SpotifyRemote. See [API](#API).
 
 > SpotifyRemote is the __undocumented__ official spotify playbutton API.
 
-## init(token, unknown, unkown, options)
+## init(token, unknown, unknown, options)
 
 We call this for you before we yield the promise.
 It sets things up and connects to the local spotify client.

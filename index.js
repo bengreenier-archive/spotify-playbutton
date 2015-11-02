@@ -81,8 +81,11 @@ module.exports = function (opts) {
 				shimmer.wrap(SpotifyRemote.desktop.utils, "ajax", function (original) {
 					return function () {
 						var old = arguments[0].url;
-						arguments[0].url = window.location.protocol + arguments[0].url;
-						debug("modifying url from "+old+" to "+arguments[0].url);
+						
+						if (old.indexOf("https://") === 0 && old.indexOf("http://") === 0) {
+							arguments[0].url = window.location.protocol + arguments[0].url;
+							debug("modifying url from "+old+" to "+arguments[0].url);
+						}
 						
 						shimmer.wrap(arguments[0], "success", function (original) {
 							return function () {

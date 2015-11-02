@@ -1,6 +1,6 @@
 {
   "name": "spotify-playbutton",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "act like the spotify playbutton from node",
   "main": "index.js",
   "scripts": {

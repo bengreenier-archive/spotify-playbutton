@@ -36,7 +36,7 @@ module.exports = function (opts) {
 			
 			// this is spotifys entire client file. we're going to strip out what we need and eval it
 			// because, clearly we're insane. 
-			req("https://d2b1xqaw2ss8na.cloudfront.net/static/js/md.1ac449c.js", function (err, res, body) {
+			req("https://d2b1xqaw2ss8na.cloudfront.net/static/js/md.js", function (err, res, body) {
 				if (err || res.statusCode !== 200) {
 					return reject(err || res.statusCode);
 				}
